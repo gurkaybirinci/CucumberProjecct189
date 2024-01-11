@@ -11,10 +11,10 @@ public class Authentication {
 //        System.out.println(generateToken());
 //    }
 
-    public static String generateToken(){
+    public static String generateToken(String username, String password){
         String body = "{\n" +
-                "  \"password\": \"Gurkay123+\",\n" +
-                "  \"username\": \"AdminGurkay\"\n" +
+                "  \"password\": \""+password+"\",\n" +
+                "  \"username\": \""+username+"\"\n" +
                 "}";
 
         Response response = given().when().body(body).contentType(ContentType.JSON).post("https://managementonschools.com/app/auth/login");
