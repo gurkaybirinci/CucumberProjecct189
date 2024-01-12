@@ -14,8 +14,8 @@ Feature: Admin Dean Ekleyebilmeli
     And DeanBirthPlace kutusuna "İstanbul" girer
     And DeanGender "Female" secenegini girer
     And DeanDateOfBirth kutusuna "05051975" girer
-    And DeanPhone kutusuna "bir telefon numarasi" girer
-    And DeanSSN kutusuna "bir ssn numarasi" girer
+    And DeanPhone kutusuna "555-275-7695" girer
+    And DeanSSN kutusuna "568-76-7867" girer
     And DeanUserName kutusuna "ayseyilmaz" girer
     And DeanPassword kutusuna sifre girer
     And DeanSubmit butonuna tiklar
